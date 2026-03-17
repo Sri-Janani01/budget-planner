@@ -1,0 +1,26 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main {
+    margin-left: 260px;
+    flex: 1;
+    padding: 40px 48px;
+    min-height: 100vh;
+}
+
+.toast {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    background: var(--text);
+    color: var(--bg);
+    padding: 12px 22px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 999;
+    box-shadow: var(--shadow-lg);
+    animation: fadeUp 0.2s ease;
+}

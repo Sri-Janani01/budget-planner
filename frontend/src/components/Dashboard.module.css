@@ -1,0 +1,186 @@
+.wrap {
+    animation: fadeUp 0.25s ease;
+}
+
+.loading {
+    color: var(--text-muted);
+    padding: 40px;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 36px;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
+}
+
+.sub {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.monthPicker {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-family: 'Syne', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.addBtn {
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    padding: 9px 20px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Syne', sans-serif;
+    cursor: pointer;
+    transition: opacity var(--transition);
+}
+
+.addBtn:hover {
+    opacity: 0.8;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.statCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    transition: transform var(--transition);
+}
+
+.statCard:hover {
+    transform: translateY(-2px);
+}
+
+.statLabel {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.statValue {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+.income .statValue {
+    color: var(--income);
+}
+
+.expense .statValue {
+    color: var(--expense);
+}
+
+.positive .statValue {
+    color: var(--income);
+}
+
+.negative .statValue {
+    color: var(--expense);
+}
+
+.chartsGrid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.chartCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+}
+
+.chartTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: var(--text-dim);
+}
+
+.empty {
+    color: var(--text-muted);
+    font-size: 13px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.breakdownGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.breakdownCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+}
+
+.breakdownRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.breakdownRow:last-child {
+    border-bottom: none;
+}
+
+.breakdownDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.breakdownLabel {
+    flex: 1;
+    font-size: 13px;
+    color: var(--text-dim);
+}
+
+.breakdownAmt {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}

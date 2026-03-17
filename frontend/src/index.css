@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #f7f3ee;
+    --surface: #ffffff;
+    --surface2: #f0ebe4;
+    --border: #e4ddd5;
+    --text: #1a1410;
+    --text-muted: #8c7b6e;
+    --text-dim: #5c4f45;
+
+    --income: #2d6a4f;
+    --income-bg: #d8f3dc;
+    --expense: #c1440e;
+    --expense-bg: #fde8df;
+    --accent: #b5632a;
+
+    --radius: 16px;
+    --radius-sm: 10px;
+    --shadow: 0 2px 20px rgba(26, 20, 16, 0.08);
+    --shadow-lg: 0 8px 40px rgba(26, 20, 16, 0.12);
+    --transition: 0.18s ease;
+
+    font-family: 'Syne', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 99px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fadeUp 0.3s ease forwards;
+}

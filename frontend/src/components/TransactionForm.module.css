@@ -1,0 +1,178 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 20, 16, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeUp 0.15s ease;
+}
+
+.modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    width: 480px;
+    max-width: 95vw;
+    box-shadow: var(--shadow-lg);
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.modalTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+}
+
+.closeBtn {
+    background: var(--surface2);
+    border: none;
+    color: var(--text-muted);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeBtn:hover {
+    background: var(--border);
+    color: var(--text);
+}
+
+.typeToggle {
+    display: flex;
+    background: var(--surface2);
+    border-radius: var(--radius-sm);
+    padding: 4px;
+    margin-bottom: 24px;
+}
+
+.typeBtn {
+    flex: 1;
+    padding: 9px;
+    border: none;
+    background: none;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Syne', sans-serif;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all var(--transition);
+}
+
+.expenseActive {
+    background: var(--expense-bg);
+    color: var(--expense);
+}
+
+.incomeActive {
+    background: var(--income-bg);
+    color: var(--income);
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.group input,
+.group select {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-family: 'Syne', sans-serif;
+    outline: none;
+    transition: border-color var(--transition);
+    width: 100%;
+}
+
+.group input:focus,
+.group select:focus {
+    border-color: var(--text-muted);
+}
+
+.group input::placeholder {
+    color: var(--text-muted);
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.cancelBtn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-family: 'Syne', sans-serif;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.cancelBtn:hover {
+    color: var(--text);
+    border-color: var(--text-muted);
+}
+
+.saveBtn {
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    padding: 10px 24px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Syne', sans-serif;
+    cursor: pointer;
+    transition: opacity var(--transition);
+}
+
+.saveBtn:hover {
+    opacity: 0.8;
+}
