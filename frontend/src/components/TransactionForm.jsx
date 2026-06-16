@@ -47,7 +47,7 @@ export default function TransactionForm({ tx, onSave, onClose }) {
                     </div>
                     <div className={styles.row}>
                         <div className={styles.group}>
-                            <label>Amount (£) *</label>
+                            <label>Amount ($) *</label>
                             <input type="number" value={form.amount} onChange={e => set('amount', e.target.value)} placeholder="0.00" min="0" step="0.01" />
                         </div>
                         <div className={styles.group}>
