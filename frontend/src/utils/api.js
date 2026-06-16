@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:3001/api';
+const BASE = 'https://budget-planner-opa9.onrender.com/api';
 
 export const api = {
     async getTransactions(month = '') {
